@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserManagementModule } from './user-management/user-management.module'; 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { Shared4Module } from './shared4/shared4.module';
+import { SharedModule } from './shared/shared.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
@@ -18,7 +18,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
     UserManagementModule,
     NgbModule,
     DashboardModule,
-    Shared4Module
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
