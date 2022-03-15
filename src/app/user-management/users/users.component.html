@@ -1,6 +1,6 @@
-<div class="d-flex justify-content-between align-items-center">
-  <h2>Users</h2>
-  <a routerLink="/user-mgmt/user-add">Add User</a>
+<div class="d-flex justify-content-between align-items-center my-3">
+  <h4>Users</h4>
+  <button type="button" class="btn btn-primary" (click)="addUser()">Add User</button>
 </div>
 
 <table class="table">
@@ -16,9 +16,32 @@
       <td>{{user.name}}</td>
       <td>{{user.email}}</td>
       <td>
-        <a [routerLink]="['/user-mgmt/user-edit', user.id]">Edit</a> | 
-        <a (click)="deleteUser(user.id)">Delete</a>
+        <a [routerLink]="['/user-mgmt/user-edit', user.id]"> Edit </a> | 
+        <a (click)="deleteUser(user.id)"> Delete </a>
       </td>
     </tr>
   </tbody>
 </table>
+
+<div class="container">
+  <div class="row">
+    <div class="col item-1">
+      Item 1
+    </div>
+    <div class="col item-2">
+      Item 2
+    </div>
+    <div class="col item-3">
+      Item 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      Item 4
+    </div>
+
+    <div class="col">
+      Item 5
+    </div>
+  </div>
+</div>
